@@ -16,7 +16,7 @@ const personObject = {
     return this.first_name + ` ` + this.last_name;
   },
   introduction: function() {
-    const name = this.first_name();
+    const name = this.full_name();
     return `Hello! The name is ${name}, and I belong to the class of ${this.class_of}.`;
   }
 
