@@ -9,6 +9,16 @@
  *      * must use the `class_of` property in the introduction
  */
 const personObject = {
+  first_name: `Raymond`,
+  last_name: `Ha`,
+  class_of: 2027,
+  full_name: function () {
+    return this.first_name + ` ` + this.last_name;
+  },
+  introduction: function() {
+    const name = this.full_name();
+    return `Hello! The name is ${name}, and I belong to the class of ${this.class_of}.`;
+  }
 
 };
 
