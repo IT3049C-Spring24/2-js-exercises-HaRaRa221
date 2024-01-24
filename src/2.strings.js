@@ -7,7 +7,7 @@ function capitalize(str) {
 // splitString: should divide a string into substrings and return an array
 // Example: "Jane,Doe,21"  =>  [ "Jane", "Doe", "21" ]
 function splitString(str, splitAt = `,`) {
-  return str.split(',');
+  return str.split(splitAt);
 }
 
 //reverseString: you should be able to reverse a string
@@ -21,11 +21,10 @@ function reverseString(str) {
    * 
    * Can even be done on one line
    */
-  const splitString = str.split('');
-  const reverseArray = splitString.reverse();
-  const joinedString = 
-  return str.split('');
+  
+  return str.split(``).reverse().join(``);
 }
+
 
 module.exports = {
   reverseString,
